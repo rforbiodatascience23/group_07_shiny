@@ -14,8 +14,17 @@ app_ui <- function(request) {
       tabsetPanel(
         tabPanel(title = "panel1",
                  "module1"),
-        tabPanel(title = "panel2",
-                 "module2")
+        tabPanel(title = "Plot",
+                 mod_module_plot_ui("module_plot_1"))
+      ),
+
+      sidebarLayout(
+        sidebarPanel(
+          "peptide_sequence"
+        ),
+        mainPanel(
+          "plot"
+        )
       )
     )
   )
@@ -45,3 +54,5 @@ golem_add_external_resources <- function() {
     # for example, you can add shinyalert::useShinyalert()
   )
 }
+
+
