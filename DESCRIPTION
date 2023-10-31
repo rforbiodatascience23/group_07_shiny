@@ -1,22 +1,18 @@
 Package: CentralDogmaApp
 Title: PKG_TITLE
 Version: 0.0.0.9000
+Authors@R: c(
+    person("Sarah", "Rosenberg Asmussen", , "s194689@student.dtu.dk", role = c("aut", "cre")),
+    person("Mette", "Bøge", , "s194679@student.dtu.dk", role = "aut")
+  )
 Description: PKG_DESC.
 License: MIT + file LICENSE
 Imports: 
     config (>= 0.3.1),
+    dogma7,
+    ggplot2,
     golem (>= 0.4.1),
-    pkgload,
     shiny (>= 1.7.5)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
-Authors@R:
-    c(person(given = "Sarah",
-             family = "Rosenberg Asmussen",
-             role = c("aut", "cre"), 
-             email = "s194689@student.dtu.dk"), 
-      person(given = "Mette",
-             family = "Bøge",
-             role = "aut",
-             email = "s194679@student.dtu.dk"))

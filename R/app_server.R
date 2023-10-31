@@ -6,6 +6,8 @@
 #' @noRd
 app_server <- function(input, output, session) {
   # Your application server logic
+  mod_module_plot_server("module_plot_1")
+  mod_DNA_to_peptide_server("DNA_to_peptide_1")
 }
 
-mod_module_plot_server("module_plot_1")
+

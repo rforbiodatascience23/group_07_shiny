@@ -12,20 +12,11 @@ app_ui <- function(request) {
     fluidPage(
       h1("CentralDogmaApp"),
       tabsetPanel(
-        tabPanel(title = "panel1",
-                 "module1"),
+        tabPanel(title = "DNA to peptide",
+                 mod_DNA_to_peptide_ui("DNA_to_peptide_1")),
         tabPanel(title = "Plot",
                  mod_module_plot_ui("module_plot_1"))
       ),
-
-      sidebarLayout(
-        sidebarPanel(
-          "peptide_sequence"
-        ),
-        mainPanel(
-          "plot"
-        )
-      )
     )
   )
 }
